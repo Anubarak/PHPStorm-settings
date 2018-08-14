@@ -1,0 +1,74 @@
+<templateSet group="Twig">
+  <template name="set" value="{% set $CONDITION$ = $END$ %}" description="set variable" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="switch" value="{% switch $End$ %}&#10;    {% case '$CONDITION$' %}&#10;    &#10;    {% default %}&#10;{% endswitch %}" description="switch" toReformat="false" toShortenFQNames="true">
+    <variable name="End" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="include" value="{% include '$End$' %}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="End" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="block" value="{% block $END$ %}&#10;&#10;{% endblock %}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="ife" value="{% if $CONDITION$ %}&#10;    $END$&#10;{% else %}&#10;    &#10;{% endif %}" description="if else endif" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="entry" value="{% set entries = craft.entries.find({&#10;    id: $CONDITION$&#10;    section: $END$&#10;}) %}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="dump" value="{{ dump($END$)}}" description="dump" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="for" value="{% for $VAR$ in $VAR$s %}&#10;    $END$&#10;{% endfor %}" description="for...in...endfor" toReformat="true" toShortenFQNames="false">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="if" value="{% if $CONDITION$ %}&#10;    $END$&#10;{% endif %}" description="if...endif" toReformat="true" toShortenFQNames="false">
+    <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="d" value="{{ d($END$)}}" description="dump" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="nn" value="{% if $BEGIN$ is defined and $BEGIN$ is not empty %}&#10;    $END$&#10;{% endif %}" description="If is defined and not null" toReformat="false" toShortenFQNames="true">
+    <variable name="BEGIN" expression="completeSmart()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="nnr" value="{% if $VAR$ is defined and $VAR$ is not empty %}&#10;    &lt;$HTML$&gt;{{ $VAR$ }}&lt;/$HTML$&gt;&#10;{% endif %}&#10;$END$" description="is defined and not null render" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HTML" expression="" defaultValue="h2" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+</templateSet>

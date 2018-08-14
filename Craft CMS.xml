@@ -1,0 +1,306 @@
+<templateSet group="Craft CMS">
+  <template name="dd" value="&lt;pre&gt;&#10;{{ dump($VAR$) }}&#10;&lt;/pre&gt;&#10;{% exit %}" description="Craft::dd(&quot;Dump &amp; Die&quot;);" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="ciel" value="ceil($NUMBER$)" description="ceil()" toReformat="false" toShortenFQNames="true">
+    <variable name="NUMBER" expression="" defaultValue="&quot;number&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="csrf" value="{{ csrfInput() }}" description="{{ getCsrfInput() }}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="exit" value="{% exit %}" description="{% exit 404 %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="floor" value="floor($NUMBER$)" description="floor()" toReformat="false" toShortenFQNames="true">
+    <variable name="NUMBER" expression="" defaultValue="&quot;number&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="includecss" value="{% includecss %}&#10;&#9;$STYLES$&#10;{% endincludecss %}" description="{% includecss %}...{% endincludecss %}" toReformat="false" toShortenFQNames="true">
+    <variable name="STYLES" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="includecssfile" value="{% includeCssFile &quot;$TEMPLATE$&quot; %}" description="{% includeCssFile &quot;css/style.css&quot; %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="&quot;css/style.css&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="includehirescss" value="{% includehirescss %}&#10;&#9;$STYLES$&#10;{% endincludehirescss %}" description="{% includehirescss %}...{% endincludehirescss %}" toReformat="false" toShortenFQNames="true">
+    <variable name="STYLES" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="includejs" value="{% includejs %}&#10;&#9;$JAVASCRIPT$&#10;{% endincludejs %}" description="{% includejs %}...{% endincludejs %}" toReformat="false" toShortenFQNames="true">
+    <variable name="JAVASCRIPT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="includejsfile" value="{% includeJsFile &quot;$TEMPLATE$&quot; %}" description="{% includeJsFile &quot;js/script.js&quot; %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="&quot;js/script.js&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="max" value="max($NUMBERS$)" description="max()" toReformat="false" toShortenFQNames="true">
+    <variable name="NUMBERS" expression="" defaultValue="&quot;num1, num2&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="min" value="min($NUMBERS$)" description="min()" toReformat="false" toShortenFQNames="true">
+    <variable name="NUMBERS" expression="" defaultValue="&quot;num1, num2&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="redirect" value="{% redirect '$TEMPLATE$' %}" description="{% redirect 'template' %}" toReformat="false" toShortenFQNames="true">
+    <variable name="TEMPLATE" expression="" defaultValue="&quot;template&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="getparam" value="craft.app.getRequest.getQueryParam($PARAM$)" description="craft.request.getParam()" toReformat="false" toShortenFQNames="true">
+    <variable name="PARAM" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="getpost" value="craft.app.getRequest().getBodyParam($POST$)" description="craft.request.getPost()" toReformat="false" toShortenFQNames="true">
+    <variable name="POST" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="getsegment" value="craft.app.getRequest().getSegment($SEGMENT$)" description="craft.request.getSegment()" toReformat="false" toShortenFQNames="true">
+    <variable name="SEGMENT" expression="" defaultValue="&quot;n&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="requirelogin" value="{% requireLogin %}" description="{% requireLogin %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="requirepermission" value="{% requirePermission &quot;$NAME$&quot; %}" description="{% requirePermission &quot;name&quot; %}" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="round" value="round($NUMBER$)" description="round()" toReformat="false" toShortenFQNames="true">
+    <variable name="NUMBER" expression="" defaultValue="&quot;number&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="shuffle" value="shuffle($ARRAY$)" description="shuffle()" toReformat="false" toShortenFQNames="true">
+    <variable name="ARRAY" expression="" defaultValue="&quot;array&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="url" value="url('$PATH$')" description="url('path')" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="&quot;path&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="urla" value="url('$PATH$', $PARAMS$, '$PROTOCOL$', false)" description="url('path', params, 'https', false)" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="&quot;path&quot;" alwaysStopAt="true" />
+    <variable name="PARAMS" expression="" defaultValue="&quot;params&quot;" alwaysStopAt="true" />
+    <variable name="PROTOCOL" expression="" defaultValue="&quot;https&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="getfoothtml" value="{{ getFootHtml() }}" description="{{ getFootHtml() }}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="getheadhtml" value="{{ getHeadHtml() }}" description="{{ getHeadHtml() }}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="matrixif" value="{% for block in $MATRIXFIELDHANDLE$ %}&#10;&#10;&#9;{% if block.type == '$BLOCKHANDLE$' %}&#10;&#10;&#9;&#9;{{ block.$FIELDHANDLE$ }}&#10;&#10;&#9;{% endif %}&#10;&#10;&#9;{% if block.type == '$BLOCKHANDLE2$' %}&#10;&#10;&#9;&#9;$END$&#10;&#10;&#9;{% endif %}&#10;&#10;{% endfor %}" description="Matrix field using if statements" toReformat="false" toShortenFQNames="true">
+    <variable name="MATRIXFIELDHANDLE" expression="" defaultValue="&quot;entry.matrixFieldHandle&quot;" alwaysStopAt="true" />
+    <variable name="BLOCKHANDLE" expression="" defaultValue="&quot;blockHandle&quot;" alwaysStopAt="true" />
+    <variable name="FIELDHANDLE" expression="" defaultValue="&quot;fieldHandle&quot;" alwaysStopAt="true" />
+    <variable name="BLOCKHANDLE2" expression="" defaultValue="&quot;blockHandle&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="matrixswitch" value="{% for block in $MATRIXFIELDHANDLE$ %}&#10;&#10;&#9;{% switch block.type %}&#10;&#10;&#9;&#9;{% case &quot;$BLOCKHANDLE$&quot; %}&#10;&#10;&#9;&#9;&#9;{{ block.$FIELDHANDLE$ }}&#10;&#10;&#9;&#9;{% case &quot;$BLOCKHANDLE2$&quot; %}&#10;&#10;&#9;&#9;&#9;$END$&#10;&#10;&#9;&#9;{% default %}&#10;&#10;&#9;&#9;&#9;{# optional default content #}&#10;&#10;&#9;{% endswitch %}&#10;&#10;{% endfor %}" description="Matrix field using switch tag" toReformat="false" toShortenFQNames="true">
+    <variable name="MATRIXFIELDHANDLE" expression="" defaultValue="&quot;entry.matrixFieldHandle&quot;" alwaysStopAt="true" />
+    <variable name="BLOCKHANDLE" expression="" defaultValue="&quot;blockHandle&quot;" alwaysStopAt="true" />
+    <variable name="FIELDHANDLE" expression="" defaultValue="&quot;fieldHandle&quot;" alwaysStopAt="true" />
+    <variable name="BLOCKHANDLE2" expression="" defaultValue="&quot;blockHandle2&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="matrixifelse" value="{% for block in $MATRIXFIELDHANDLE$ %}&#10;&#10;&#9;{% if block.type == '$BLOCKHANDLE$' %}&#10;&#10;&#9;&#9;{{ block.$FIELDHANDLE$ }}&#10;&#10;&#9;{% elseif block.type == &quot;$BLOCKHANDLE2$&quot; %}&#10;&#10;&#9;&#9;$END$&#10;&#9;&#10;&#9;{% endif %}&#10;&#10;{% endfor %}" description="matrix field using if/else statement" toReformat="false" toShortenFQNames="true">
+    <variable name="MATRIXFIELDHANDLE" expression="" defaultValue="&quot;entry.matrixFieldHandle&quot;" alwaysStopAt="true" />
+    <variable name="BLOCKHANDLE" expression="" defaultValue="&quot;blockHandle&quot;" alwaysStopAt="true" />
+    <variable name="FIELDHANDLE" expression="" defaultValue="&quot;fieldHandle&quot;" alwaysStopAt="true" />
+    <variable name="BLOCKHANDLE2" expression="" defaultValue="&quot;blockHandle2&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="switch" value="{% switch $VARIABLE$ %}&#10;&#10;&#9;{% case &quot;$VALUE1$&quot; %}&#10;&#10;&#9;&#9;&#10;&#10;&#9;{% case &quot;$VALUE2$&quot; %}&#10;&#10;&#9;&#9;$END&#10;&#10;&#9;{% default %}&#10;&#10;&#9;&#9;{# optional default content #}&#10;&#10;{% endswitch %}" description="{% switch %}...{% endswitch %}" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE" expression="" defaultValue="&quot;variable&quot;" alwaysStopAt="true" />
+    <variable name="VALUE1" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
+    <variable name="VALUE2" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="case" value="{% case &quot;$VALUE$&quot; %}" description="{% case &quot;value&quot; %}" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="&quot;value&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="assets" value="{% for image in craft.assets.&#10;&#9;.source('$SOURCEHANDLE$')&#10;&#9;.kind('image')&#10;&#9;.limit($LIMIT$)&#10;}) %}&#10;&#9;&lt;img src=&quot;{{ image.getUrl('$IMAGETRANSFORM$') }}&quot; width=&quot;{{ image.getWidth('$IMAGETRANSFORM$') }}&quot; height=&quot;{{ image.getHeight('$IMAGETRANSFORM$') }}&quot; alt=&quot;{{ image.title }}&quot;&gt;&#10;{% endfor %}" description="craft.assets tag" toReformat="false" toShortenFQNames="true">
+    <variable name="SOURCEHANDLE" expression="" defaultValue="&quot;sourceHandle&quot;" alwaysStopAt="true" />
+    <variable name="LIMIT" expression="" defaultValue="&quot;11&quot;" alwaysStopAt="true" />
+    <variable name="IMAGETRANSFORM" expression="" defaultValue="&quot;thumb&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="asset" value="{% set asset = $VARIABLE$.one() %}&#10;{% if asset %}&#10;    {% import '_macros/image.twig' as image %}&#10;    {{ image.renderAsset(asset, {&#10;        transform: {&#10;            'width': $WIDTH$,&#10;            'height': $HEIGHT$&#10;        },&#10;        class: &quot;$CLASS$&quot;       &#10;    }) }}&#10;{% endif %}" description="Renders an image" toReformat="false" toShortenFQNames="true">
+    <variable name="VARIABLE" expression="" defaultValue="&quot;entry.fieldHandle&quot;" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="" defaultValue="responsive" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="tags" value="&lt;ul&gt;&#10;&#9;{% for tag in craft.tags&#10;&#9;&#9;.group('$HANDLE$')&#10;&#9;&#9;%}&#10;&#9;&#9;&#9;&lt;li&gt;{{ tag }}&lt;/li&gt;&#10;&#9;{% endfor %}&#10;&lt;/ul&gt;" description="craft.tags tag" toReformat="false" toShortenFQNames="true">
+    <variable name="HANDLE" expression="" defaultValue="&quot;tagGroupHandle&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="tagsp" value="{% set tags = craft.tags({&#10;&#9;group: '$HANDLE$'&#10;}) %}&#10;&#10;&lt;ul&gt;&#10;&#9;{% for tag in tags %}&#10;&#9;&#9;&lt;li&gt;{{ tag }}&lt;/a&gt;&lt;/li&gt;&#10;&#9;{% endfor %}&#10;&lt;/ul&gt;" description="craft.tags tag - object syntax" toReformat="false" toShortenFQNames="true">
+    <variable name="HANDLE" expression="" defaultValue="&quot;tagGroupHandle&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="cache" value="{% cache %}&#10;&#9;$END$&#10;{% endcache %}" description="{% cache %}...{% endcache %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="endcache" value="{% endcache %}" description="{% endcache %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="nav" value="{% nav $ITEM$ in $ITEMS$ %}&#10;&#9;$END$&#10;{% endnav %}" description="{% nav item in items %}...{% endnav %}" toReformat="false" toShortenFQNames="true">
+    <variable name="ITEM" expression="" defaultValue="&quot;item&quot;" alwaysStopAt="true" />
+    <variable name="ITEMS" expression="" defaultValue="&quot;items&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="paginate" value="{% paginate $ELEMENTS$ as $PAGEINFO$, $NAME$ %}&#10;&#10;{% for item in $NAME$ %}&#10;&#9;{# ... #}$END$&#10;{% endfor %}&#10;&#10;{% if $PAGEINFO$.prevUrl %}&lt;a href=&quot;{{ $PAGEINFO$.prevUrl }}&quot;&gt;Previous Page&lt;/a&gt;{% endif %}&#10;{% if $PAGEINFO$.nextUrl %}&lt;a href=&quot;{{ $PAGEINFO$.nextUrl }}&quot;&gt;Next Page&lt;/a&gt;{% endif %}" description="{% paginate %}" toReformat="false" toShortenFQNames="true">
+    <variable name="ELEMENTS" expression="" defaultValue="&quot;craft.entries.section('articles').limit(11)&quot;" alwaysStopAt="true" />
+    <variable name="PAGEINFO" expression="" defaultValue="&quot;pageInfo&quot;" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="migrate" value="class m$TEST$_$WAA$_$PLUGINHANDLE$_$DESCRIPTION$ extends BaseMigration&#10;{&#10;&#9;public function safeUp()&#10;&#9;{&#10;&#9;&#9;$END$&#10;&#9;&#9;&#10;&#9;&#9;return true;&#10;&#9;}&#10;}" description="Create a new migration" toReformat="false" toShortenFQNames="true">
+    <variable name="TEST" expression="date(&quot;YYMMdd&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="WAA" expression="time(&quot;HHmmss&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="PLUGINHANDLE" expression="" defaultValue="&quot;pluginHandle&quot;" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="&quot;migrationDescription&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="matrix" value="{% for block in $MATRIXFIELDHANDLE$ %}&#10;&#10;&#9;{% if block.type == '$BLOCKHANDLE$' %}&#10;&#10;&#9;&#9;{{ block.$FIELDHANDLE$ }}&#10;&#10;&#9;{% endif %}&#10;&#10;&#9;{% if block.type == '$BLOCKHANDLE2$' %}&#10;&#10;&#9;&#9;$END$&#10;&#10;&#9;{% endif %}&#10;&#10;{% endfor %}" description="Matrix field using if statements" toReformat="false" toShortenFQNames="true">
+    <variable name="MATRIXFIELDHANDLE" expression="" defaultValue="&quot;entry.matrixFieldHandle&quot;" alwaysStopAt="true" />
+    <variable name="BLOCKHANDLE" expression="" defaultValue="&quot;blockHandle&quot;" alwaysStopAt="true" />
+    <variable name="FIELDHANDLE" expression="" defaultValue="&quot;fieldHandle&quot;" alwaysStopAt="true" />
+    <variable name="BLOCKHANDLE2" expression="" defaultValue="&quot;blockHandle&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="js" value="{% js %}&#10;    $BEGIN$&#10;{% endjs %}" description="{% js %}" toReformat="false" toShortenFQNames="true">
+    <variable name="BEGIN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="endswitch" value="{% endswitch %}" description="{% endswitch %}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="dasset" value="{% if $VAR$ is defined and $VAR$ is not null %}&#10;    {% set asset = craft.thaff.getImage($VAR$) %}&#10;    {% if asset %}&#10;        {% set transform = {&#10;            'width': $WIDTH$,&#10;            'height': $HEIGHT$&#10;        } %}&#10;        &lt;img src=&quot;{{ asset.getUrl(transform) }}&quot; alt=&quot;{{ asset.title }}&quot; class=&quot;responsive&quot;/&gt;&#10;    {% endif %}&#10;{% endif %}&#10;$END$" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="t" value="{{ '$BEGIN$'|t('site') }}" description="translate" toReformat="false" toShortenFQNames="true">
+    <variable name="BEGIN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="tasset" value="{% import '_macros/image.twig' as image %}&#10;&#10;{{ image.renderAsset(asset, {&#10;    'transform': {&#10;        'width': $WIDTH$,&#10;        'height': $HEIGHT$&#10;    },&#10;    'optimize': true,&#10;    'size': craft.thaff.getImageSize('single'),&#10;    'class': '',&#10;    'default': false&#10;}) }}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="rasset" value="{% import '_macros/image.twig' as image %}&#10;{{ image.renderAsset($ASSET$, {&#10;    transform: {&#10;        'width': $WIDTH$,&#10;        'height': $HEIGHT$,&#10;        'mode': 'fit'&#10;    },&#10;    class: &quot;$CLASS$&quot;       &#10;}) }}" description="Renders an asset" toReformat="false" toShortenFQNames="true">
+    <variable name="ASSET" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="WIDTH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HEIGHT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="" defaultValue="responsive" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="nq" value="{% if $VAR$ is not empty and $VAR$ instance of ('craft\elements\db\ElementQuery') %}&#10;    $END$&#10;{% endif %}" description="if Not empty and instance of Query" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+  <template name="isg" value="{% if $VAR$ is defined and $VAR$ is instance of ('craft\\elements\\GlobalSet') %}&#10;    $END$&#10;{% endif %}" description="Is global" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+</templateSet>

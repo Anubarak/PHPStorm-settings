@@ -1,0 +1,7 @@
+<templateSet group="user">
+  <template name="trans" value="{{ &quot;$END$&quot;|t }}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,9 @@
+<templateSet group="html/xml">
+  <template name="hidden" value="&lt;input type=&quot;hidden&quot; name=&quot;$BEGIN$&quot; value=&quot;$END$&quot;&gt;" description="Hidden" toReformat="false" toShortenFQNames="true">
+    <variable name="BEGIN" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="Twig" value="true" />
+    </context>
+  </template>
+</templateSet>
